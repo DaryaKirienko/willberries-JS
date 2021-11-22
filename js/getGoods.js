@@ -41,8 +41,8 @@ const getGoods = () => {
 
         localStorage.setItem('goods', JSON.stringify(arr))
 
-        if (window.location.pathname !== '/goods.html') {
-          window.location.href = '/goods.html'
+        if (window.location.pathname !== '/willberries-JS/goods.html') {
+          window.location.href = '/willberries-JS/goods.html'
         } else {
           renderGoods(arr)
         }
