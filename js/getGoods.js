@@ -15,7 +15,7 @@ const getGoods = () => {
       <div class="goods-card">
         <span class="label ${good.label ? null : 'd-none'}">${good.label}</span>
         <img
-          src="../db/${good.img}""
+          src="../willberries-JS/db/${good.img}""
           alt="${good.name}"
           class="goods-image"
         />
