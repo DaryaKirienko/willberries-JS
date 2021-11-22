@@ -41,8 +41,8 @@ const getGoods = () => {
 
         localStorage.setItem('goods', JSON.stringify(arr))
 
-        if (window.location.pathname !== 'willberries-JS/goods.html') {
-          window.location.href = 'willberries-JS/goods.html'
+        if (window.location.pathname !== '/goods.html') {
+          window.location.href = '/goods.html'
         } else {
           renderGoods(arr)
         }
@@ -53,8 +53,7 @@ const getGoods = () => {
 
   const moreBtn = document.querySelector('.more')
   if (moreBtn) {
-    moreBtn.addEventListener('click', (evt) => {
-      evt.preventDefault()
+    moreBtn.addEventListener('click', () => {
       getData()
     })
   }
