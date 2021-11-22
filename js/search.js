@@ -16,7 +16,7 @@ const search = function () {
       <div class="goods-card">
         <span class="label ${good.label ? null : 'd-none'}">${good.label}</span>
         <img
-          src="../db/${good.img}""
+          src="./db/${good.img}""
           alt="${good.name}"
           class="goods-image"
         />
@@ -39,8 +39,8 @@ const search = function () {
         const arr = data.filter(good => good.name.toLowerCase().includes(value.toLowerCase()))
         localStorage.setItem('goods', JSON.stringify(arr))
 
-        if (window.location.pathname !== '/goods.html') {
-          window.location.href = '/goods.html'
+        if (window.location.pathname !== '/willberries-JS/goods.html') {
+          window.location.href = '/willberries-JS/goods.html'
         } else {
           renderGoods(arr)
         }
